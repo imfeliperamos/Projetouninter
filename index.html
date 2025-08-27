@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio - CV Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Menu de navegação -->
+    <nav>
+        <h1>Meu Portfólio</h1>
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#formacao">Formacao</a></li>
+            <li><a href="#meusprojetos">Projetos</a></li>
+            <li><a href="#falecomigo">Fale comigo</a></li>
+        </ul>
+        <button id="btn-modo-escuro">🌙</button>
+    </nav>
+
+    <!-- Seção Sobre Mim -->
+    <section id="sobre">
+        <h2>Sobre</h2>
+        <div class="caixa-sobre">
+            <div class="minha-foto">
+                <img src="image.png" alt="Minha foto" class="foto">
+            </div>
+            <div class="descricao">
+                <h3>Oi! Eu sou Valdir Felipe</h3>
+                <p>
+                    Sou apaixonado por tecnologia e estou sempre em busca de novos conhecimentos. Atualmente, estou focado em desenvolvimento web, estudando HTML, CSS, JavaScript e React. Também tenho experiência com SQL e Python, além de conhecimentos em modelagem de dados e banco de dados. Meu objetivo é criar soluções criativas e funcionais, enquanto continuo aprendendo e evoluindo na área de programação.
+                </p>
+                <p><strong>Meus hobbies:</strong></p>
+                <ul>
+                    <li>Programar</li>
+                    <li>Ir à igreja</li>
+                    <li>Assistir séries</li>
+                    <li>Estudar banco de dados</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Formação -->
+    <section id="formacao">
+        <h2>Formação</h2>
+        <div class="caixa-formacao">
+            <div class="escola">
+                <h3>Formação</h3>
+                <div class="curso">
+                    <h4>Faculdade de Análise e Desenvolvimento de Sistemas</h4>
+                    <p>UNINTER</p>
+                </div>
+                <div class="curso">
+                    <h4>Certificados Alura</h4>
+                    <ul>
+                        <li>Modelagem de Dados</li>
+                        <li>React</li>
+                        <li>SQL</li>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                        <li>Banco de Dados</li>
+                    </ul>
+                    <p><a href="https://cursos.alura.com.br/user/valdirfelipera" target="_blank">Ver todos meus certificados na Alura</a></p>
+                </div>
+            </div>
+            <div class="idioma">
+                <h3>Idiomas</h3>
+                <ul>
+                    <li>Português - Fluente</li>
+                    <li>Inglês - Básico</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Portfólio -->
+    <section id="meusprojetos">
+        <h2>Projetos</h2>
+        <div class="caixa-projetos">
+            <div class="um-projeto">
+                <div class="img-projeto">
+                    <img src="organograma.png" alt="Imagem do projeto Organograma" style="max-width:100%; max-height:140px; display:block; margin:0 auto; border-radius:4px;">
+                </div>
+                <h3>Sistema de Organograma</h3>
+                <p>Aplicação desenvolvida durante as aulas de React na Alura, permitindo criar e organizar cards de pessoas em um organograma de forma prática.</p>
+                <a href="https://organograma-phi-topaz.vercel.app/" class="btn-projeto" target="_blank">Ver Projeto</a>
+            </div>
+            <div class="um-projeto">
+                <div class="img-projeto">
+                    <img src="projetocurriculo.png" alt="Imagem do projeto Currículo" style="max-width:100%; max-height:140px; display:block; margin:0 auto; border-radius:4px;">
+                </div>
+                <h3>Meu Portfólio</h3>
+                <p>Este é o meu portfólio online, criado para apresentar meus estudos, projetos e habilidades. Ele foi desenvolvido com HTML, CSS e um toque de JavaScript para destacar minha jornada na programação.</p>
+                <a href="#sobre" class="btn-projeto">Ver Projeto</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="falecomigo">
+        <h2>Fale comigo</h2>
+        <div class="caixa-contato">
+            <div class="meus-contatos">
+                <h3>Me chama aí!</h3>
+                <p>Se quiser conversar, pode mandar mensagem.</p>
+                <p><strong>Email:</strong> valdirfelipera@gmail.com</p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/imfeliperamos/" target="_blank">imfeliperamos</a></p>
+                <p><strong>Cidade:</strong> Novo Hamburgo - RS</p>
+            </div>
+            <form id="form-contato">
+                <div class="linha-campo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome">
+                </div>
+                <div class="linha-campo">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email">
+                </div>
+                <div class="linha-campo">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Feito por Valdir Felipe - 2025. Trabalho desenvolvido para a faculdade de Análise e Desenvolvimento de Sistemas.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
